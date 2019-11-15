@@ -39,7 +39,7 @@ HTML, CSS, JavaScript, babel 7.6.4, babel plugin 7.6.0,,clean-webpack-plugin 3.0
 Project was written using Google Chrome; no other browsers were tested for compatibility.
 
 ###Project Setup instructions
-After cloning the project locally, you can run npm install If something doesn't display correctly or goes wrong somehow, please contact me at lara.m.bjork@gmail.com and I will do my best to troubleshoot for you.
+After cloning the project locally, you can run **npm install** to download the necessary dependencies. You can then run **npm run build** to bundle your version of this project. If something doesn't display correctly or goes wrong somehow, please contact me at lara.m.bjork@gmail.com and I will do my best to troubleshoot for you.
 
 ###Known Issues
 No known issues.
