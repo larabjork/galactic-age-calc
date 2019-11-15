@@ -39,4 +39,7 @@ export class Age {
   marsRemain(age) {
     this.age = this.earthRemain/1.88;
   }
+  jupiterRemain(age) {
+    this.age = this.earthRemain/11.86;
+  }
 }
