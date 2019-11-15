@@ -1,6 +1,8 @@
 export class Age {
   constructor(age) {
     this.age = age;
+    this.earthExpect = 78;
+    this.earthRemain = 78 - this.age;
   }
 
   checkNumeric(age) {

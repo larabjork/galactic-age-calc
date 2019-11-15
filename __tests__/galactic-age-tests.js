@@ -37,6 +37,12 @@ describe ('Age', () => {
     expect(newJupiterAge.age===1.2647554806070826).toEqual(true);
   });
 
+  test('should correctly convert remaining Earth life expectancy to Mercury years', () => {
+
+    expectMars.marsRemain.
+
+  });
+
 
 
 
