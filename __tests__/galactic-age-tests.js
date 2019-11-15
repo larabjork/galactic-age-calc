@@ -25,6 +25,12 @@ describe ('Age', () => {
     expect(newVenusAge.age===24.193548387096776).toEqual(true);
   });
 
+  test('should correctly calculate age in Mars years', () => {
+    const newMarsAge = new Age(15);
+    newMarsAge.convertMars(15);
+    expect(newMarsAge.age===7.9787234042553195).toEqual(true);
+  });
+
 
 
 
