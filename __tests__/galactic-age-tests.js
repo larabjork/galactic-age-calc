@@ -20,9 +20,9 @@ describe ('Age', () => {
   });
 
   test('should correctly calculate age in Venus years', () => {
-    const newVenusAge = new Age();
+    const newVenusAge = new Age(15);
     newVenusAge.convertVenus(15);
-    expect(newVenusAge.age===24.2).toEqual(true);
+    expect(newVenusAge.age===24.193548387096776).toEqual(true);
   });
 
 
