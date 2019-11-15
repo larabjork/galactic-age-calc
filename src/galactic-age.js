@@ -30,7 +30,9 @@ export class Age {
 
   mercuryRemain(age) {
     this.age = this.earthRemain/0.24;
-
   }
 
+  venusRemain(age) {
+    this.age = this.earthRemain/0.62;
+  }
 }
