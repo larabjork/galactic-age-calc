@@ -1,1 +1,4 @@
-export function
+export class Age {
+  const
+
+}
