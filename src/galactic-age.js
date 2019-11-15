@@ -22,5 +22,8 @@ export class Age {
   convertMars(age) {
     this.age = this.age/1.88;
   }
+  convertJupiter(age) {
+    this.age = this.age/11.86;
+  }
 
 }
