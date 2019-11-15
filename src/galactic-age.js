@@ -19,6 +19,8 @@ export class Age {
     this.age = this.age/0.62;
   }
 
-
+  convertMars(age) {
+    this.age = this.age/1.88;
+  }
 
 }
