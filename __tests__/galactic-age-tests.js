@@ -13,6 +13,11 @@ describe ('Age', () => {
     expect(newLetter.age===true).toEqual(false);
   });
 
+  test('should correctly calculate age in Mercury years', () => {
+    const newMercAge = new Age(15/.24);
+    newMercAge.convertMercury(15);
+    expect(newMercAge.age===62.5).toEqual(true);
+  });
 
 
 
