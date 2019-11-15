@@ -61,6 +61,10 @@ describe ('Age', () => {
     expect(testMarsRem.age===33.51063829787234).toEqual(true);
   });
 
-
+  test('should correctly calculate remaining years, in Jupiter years', () => {
+    const testJupRem = new Age(15);
+    testJupRem.jupiterRemain(15);
+    expect(testJupRem.age===5.311973018549748).toEqual(true);
+  });
 
 });
