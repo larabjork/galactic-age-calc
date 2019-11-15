@@ -14,7 +14,7 @@ describe ('Age', () => {
   });
 
   test('should correctly calculate age in Mercury years', () => {
-    const newMercAge = new Age(15/.24);
+    const newMercAge = new Age(15);
     newMercAge.convertMercury(15);
     expect(newMercAge.age===62.5).toEqual(true);
   });
