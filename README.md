@@ -23,7 +23,7 @@ _Objectives_
 
 _Your code will be reviewed for the following objectives:_
 
-  *  Business logic is thoroughly tested with Jest.
+  * Business logic is thoroughly tested with Jest.
   * Each spec was committed before writing its corresponding code.
   * Project utilizes ES6 features including classes, let and const.
   * Dependencies are managed with npm.
@@ -31,6 +31,12 @@ _Your code will be reviewed for the following objectives:_
   * Project is in a polished, portfolio-quality state.
   * Required functionality was in place by the Friday deadline.
   * Project demonstrates understanding of week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+
+###Specifications
+I developed these specs based on the assignment description.
+
+1. The program will confirm that user has entered a number / will
+
 
 
 ###Technologies Used
