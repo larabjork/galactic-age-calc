@@ -1,4 +1,6 @@
 export class Age {
-  const
+  constructor(age) {
+    this.age = age;
+  }
 
 }
