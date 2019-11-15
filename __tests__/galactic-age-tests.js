@@ -67,4 +67,11 @@ describe ('Age', () => {
     expect(testJupRem.age===5.311973018549748).toEqual(true);
   });
 
+  test('should correctly convert Earth years into years for all other planets', () => {
+    const newAges = new Age(15);
+    newAges.convertAge(15);
+    expect(newAges.convertArray).toEqual([62.5, 24.193548387096776, 7.9787234042553195, 1.2647554806070826]);
+
+  });
+
 });
