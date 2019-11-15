@@ -44,9 +44,9 @@ describe ('Age', () => {
   });
 
   test('should correctly calculate remaining years, in Mercury years', () => {
-    const testEarthRem = new Age(15);
-    const testMercRem = testEarthRem.convertMercury(15);
-    expect(testMercRem.mercuryRemain===262.5).toEqual(true);
+    const testMercRem = new Age(15);
+    testMercRem.mercuryRemain(15);
+    expect(testMercRem.age===262.5).toEqual(true);
   });
 
 

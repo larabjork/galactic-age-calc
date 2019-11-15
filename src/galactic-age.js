@@ -28,4 +28,9 @@ export class Age {
     this.age = this.age/11.86;
   }
 
+  mercuryRemain(age) {
+    this.age = this.earthRemain/0.24;
+
+  }
+
 }
