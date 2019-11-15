@@ -31,6 +31,12 @@ describe ('Age', () => {
     expect(newMarsAge.age===7.9787234042553195).toEqual(true);
   });
 
+  test('should correctly calculate age in Jupiter years', () => {
+    const newJupiterAge = new Age(15);
+    newJupiterAge.convertJupiter(15);
+    expect(newJupiterAge.age===1.2647554806070826).toEqual(true);
+  });
+
 
 
 
