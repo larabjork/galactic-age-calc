@@ -19,6 +19,12 @@ describe ('Age', () => {
     expect(newMercAge.age===62.5).toEqual(true);
   });
 
+  test('should correctly calculate age in Venus years', () => {
+    const newVenusAge = new Age();
+    newVenusAge.convertVenus(15);
+    expect(newVenusAge.age===24.2).toEqual(true);
+  });
+
 
 
 
