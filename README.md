@@ -35,8 +35,49 @@ _Your code will be reviewed for the following objectives:_
 ###Specifications
 I developed these specs based on the assignment description.
 
-1. The program will confirm that user has entered a number / will
+1. The program will allow a user to enter an age in Earth years.
+Input: 45
+Output: 45
 
+2. The program will not be able to process non-numerical characters entered by user.
+Input: fun
+Output: error message to be determined.
+
+3. The program will correctly calculate age in Mercury years
+Input: 45
+Output: 187.5 (extent of rounding returned to user TBD)
+
+4. The program will correctly calculate age in Venus years.
+Input: 45
+Output: 72.58064516129032 (extent of rounding returned to user TBD)
+
+5. The program will correctly calculate age in Mars years.
+Input: 45
+Output: 23.93617021276596(extent of rounding returned to user TBD)
+
+6. The program will correctly calculate age in Jupiter years.
+Input: 45
+Output: 3.794266441821248 (extent of rounding returned to user TBD)
+
+7. The program will correctly calculate remaining years on Earth, based on average expectancy of 78.
+Input: 45
+Output: 33
+
+8. The program will correctly calculate remaining years, in Mercury years.
+Input: 45
+Output: 137.5
+
+9. The program will correctly calculate remaining years, in Venus years.
+Input: 45
+Output: 53.225806451612904 (extent of rounding returned to user TBD)
+
+10. The program will correctly calculate remaining years, in Mars years.
+Input: 45
+Output: 17.5531914893617 (extent of rounding returned to user TBD)
+
+11. The program will correctly calculate remaining years, in Jupiter years.
+Input: 45
+Output: 2.782462057335582 (extent of rounding returned to user TBD)
 
 
 ###Technologies Used
@@ -47,10 +88,11 @@ Project was written using Google Chrome; no other browsers were tested for compa
 ###Project Setup instructions
 After cloning the project locally, you can run **npm install** to download the necessary dependencies. You can then run **npm run build** to bundle your version of this project. If something doesn't display correctly or goes wrong somehow, please contact me at lara.m.bjork@gmail.com and I will do my best to troubleshoot for you.
 
-###Known Issues
-No known issues.
+###Known Issues and Limitations
+* No known issues with code.
+* Edge cases not explored beyond instances where user age in Earth years is 78 or more (i.e., where life expectancy would calculate as 0 or a negative number).
 
 ###License
 This software is licensed under the MIT license.
 
-Copyright (c) 2019 **  Lara Bjork **
+Copyright (c) 2019 Lara Bjork
