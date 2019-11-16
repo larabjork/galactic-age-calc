@@ -13,6 +13,16 @@ export class Age {
     };
   }
 
+  reachOrSurpass(age) {
+    if (this.earthRemain <= 0){
+      this.earthRemain*-1
+      return this.earthRemain;
+    } else {
+      this.earthRemain*1;
+      return this.earthRemain;
+    };
+  }
+
   convertMercury(age) {
     this.age = this.age/0.24;
   }
@@ -24,6 +34,7 @@ export class Age {
   convertMars(age) {
     this.age = this.age/1.88;
   }
+
   convertJupiter(age) {
     this.age = this.age/11.86;
   }
@@ -39,9 +50,11 @@ export class Age {
   marsRemain(age) {
     this.age = this.earthRemain/1.88;
   }
+
   jupiterRemain(age) {
     this.age = this.earthRemain/11.86;
   }
+
 
 
 }

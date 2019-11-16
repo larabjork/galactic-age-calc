@@ -69,7 +69,8 @@ describe ('Age', () => {
 
   test('should correctly account for user has already reached/surpassed average life expectancy', () => {
     const testEdge = new Age(82);
-    expect(testEdge.earthRemain).toBeGreaterThanOrEqual(0);
+    testEdge.reachOrSurpass(82);
+    expect(testEdge.age).toBeGreaterThanOrEqual(0);
   });
 
 });
