@@ -15,10 +15,9 @@ export class Age {
 
   reachOrSurpass() {
     if (this.earthRemain <= 0){
-      this.earthRemain*-1
-      return this.earthRemain;
+      this.earthExceeded = this.earthRemain*-1
+      return this.earthExceeded;
     } else {
-      this.earthRemain*1;
       return this.earthRemain;
     };
   }

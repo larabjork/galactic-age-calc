@@ -16,7 +16,13 @@ describe ('Age', () => {
   test('should correctly account for user has already reached/surpassed average life expectancy', () => {
     const testEdge = new Age(82);
     testEdge.reachOrSurpass();
-    expect(testEdge.age).toBeGreaterThanOrEqual(0);
+    expect(testEdge.earthExceeded).toBeGreaterThanOrEqual(0);
+  });
+
+  test('should correctly account for user has already reached/surpassed average life expectancy', () => {
+    const testEdge = new Age(15);
+    testEdge.reachOrSurpass();
+    expect(testEdge.earthRemain).toBeGreaterThanOrEqual(0);
   });
 
   test('should correctly calculate age in Mercury years', () => {
