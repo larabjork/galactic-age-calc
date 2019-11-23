@@ -9,31 +9,37 @@ describe ('Age', () => {
 
   test('should not be able to process non-numerical characters entered by user', () => {
     const newLetter = new Age("asdf")
-    newLetter.checkNumeric("asdf")
+    newLetter.checkNumeric()
     expect(newLetter.age===true).toEqual(false);
+  });
+
+  test('should correctly account for user has already reached/surpassed average life expectancy', () => {
+    const testEdge = new Age(82);
+    testEdge.reachOrSurpass();
+    expect(testEdge.age).toBeGreaterThanOrEqual(0);
   });
 
   test('should correctly calculate age in Mercury years', () => {
     const newMercAge = new Age(15);
-    newMercAge.convertMercury(15);
+    newMercAge.convertMercury();
     expect(newMercAge.age===62.5).toEqual(true);
   });
 
   test('should correctly calculate age in Venus years', () => {
     const newVenusAge = new Age(15);
-    newVenusAge.convertVenus(15);
+    newVenusAge.convertVenus();
     expect(newVenusAge.age===24.193548387096776).toEqual(true);
   });
 
   test('should correctly calculate age in Mars years', () => {
     const newMarsAge = new Age(15);
-    newMarsAge.convertMars(15);
+    newMarsAge.convertMars();
     expect(newMarsAge.age===7.9787234042553195).toEqual(true);
   });
 
   test('should correctly calculate age in Jupiter years', () => {
     const newJupiterAge = new Age(15);
-    newJupiterAge.convertJupiter(15);
+    newJupiterAge.convertJupiter();
     expect(newJupiterAge.age===1.2647554806070826).toEqual(true);
   });
 
@@ -45,13 +51,13 @@ describe ('Age', () => {
 
   test('should correctly calculate remaining years, in Mercury years', () => {
     const testMercRem = new Age(15);
-    testMercRem.mercuryRemain(15);
+    testMercRem.mercuryRemain();
     expect(testMercRem.age===262.5).toEqual(true);
   });
 
   test('should correctly calculate remaining years, in Venus years', () => {
     const testVenRem = new Age(15);
-    testVenRem.venusRemain(15);
+    testVenRem.venusRemain();
     expect(testVenRem.age===101.61290322580645).toEqual(true);
   });
 
@@ -63,14 +69,9 @@ describe ('Age', () => {
 
   test('should correctly calculate remaining years, in Jupiter years', () => {
     const testJupRem = new Age(15);
-    testJupRem.jupiterRemain(15);
+    testJupRem.jupiterRemain();
     expect(testJupRem.age===5.311973018549748).toEqual(true);
   });
 
-  test('should correctly account for user has already reached/surpassed average life expectancy', () => {
-    const testEdge = new Age(82);
-    testEdge.reachOrSurpass(82);
-    expect(testEdge.age).toBeGreaterThanOrEqual(0);
-  });
 
 });

@@ -5,7 +5,7 @@ export class Age {
     this.earthRemain = 78 - this.age;
   }
 
-  checkNumeric(age) {
+  checkNumeric() {
     if (Number.isInteger(this.age)){
       return true;
     } else {
@@ -13,7 +13,7 @@ export class Age {
     };
   }
 
-  reachOrSurpass(age) {
+  reachOrSurpass() {
     if (this.earthRemain <= 0){
       this.earthRemain*-1
       return this.earthRemain;
@@ -23,35 +23,35 @@ export class Age {
     };
   }
 
-  convertMercury(age) {
+  convertMercury() {
     this.age = this.age/0.24;
   }
 
-  convertVenus(age) {
+  convertVenus() {
     this.age = this.age/0.62;
   }
 
-  convertMars(age) {
+  convertMars() {
     this.age = this.age/1.88;
   }
 
-  convertJupiter(age) {
+  convertJupiter() {
     this.age = this.age/11.86;
   }
 
-  mercuryRemain(age) {
+  mercuryRemain() {
     this.age = this.earthRemain/0.24;
   }
 
-  venusRemain(age) {
+  venusRemain() {
     this.age = this.earthRemain/0.62;
   }
 
-  marsRemain(age) {
+  marsRemain() {
     this.age = this.earthRemain/1.88;
   }
 
-  jupiterRemain(age) {
+  jupiterRemain() {
     this.age = this.earthRemain/11.86;
   }
 
