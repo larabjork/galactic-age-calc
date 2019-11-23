@@ -44,15 +44,15 @@ export class Age {
   }
 
   venusRemain() {
-    this.age = this.earthRemain/0.62;
+    this.venusRemain = this.earthRemain/0.62;
   }
 
   marsRemain() {
-    this.age = this.earthRemain/1.88;
+    this.marsRemain = this.earthRemain/1.88;
   }
 
   jupiterRemain() {
-    this.age = this.earthRemain/11.86;
+    this.jupiterRemain = this.earthRemain/11.86;
   }
 
 

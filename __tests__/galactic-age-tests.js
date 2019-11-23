@@ -58,19 +58,19 @@ describe ('Age', () => {
   test('should correctly calculate remaining years, in Venus years', () => {
     const testVenRem = new Age(15);
     testVenRem.venusRemain();
-    expect(testVenRem.age===101.61290322580645).toEqual(true);
+    expect(testVenRem.venusRemain).toEqual(101.61290322580645);
   });
 
   test('should correctly calculate remaining years, in Mars years', () => {
     const testMarsRem = new Age(15);
-    testMarsRem.marsRemain(15);
-    expect(testMarsRem.age===33.51063829787234).toEqual(true);
+    testMarsRem.marsRemain();
+    expect(testMarsRem.marsRemain).toEqual(33.51063829787234);
   });
 
   test('should correctly calculate remaining years, in Jupiter years', () => {
     const testJupRem = new Age(15);
     testJupRem.jupiterRemain();
-    expect(testJupRem.age===5.311973018549748).toEqual(true);
+    expect(testJupRem.jupiterRemain).toEqual(5.311973018549748);
   });
 
 
