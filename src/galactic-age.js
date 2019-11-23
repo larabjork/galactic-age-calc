@@ -28,15 +28,15 @@ export class Age {
   }
 
   convertVenus() {
-    this.age = this.age/0.62;
+    this.venusAge = this.age/0.62;
   }
 
   convertMars() {
-    this.age = this.age/1.88;
+    this.marsAge = this.age/1.88;
   }
 
   convertJupiter() {
-    this.age = this.age/11.86;
+    this.jupiterAge = this.age/11.86;
   }
 
   mercuryRemain() {

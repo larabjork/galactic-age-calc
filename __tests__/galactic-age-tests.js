@@ -28,19 +28,19 @@ describe ('Age', () => {
   test('should correctly calculate age in Venus years', () => {
     const newVenusAge = new Age(15);
     newVenusAge.convertVenus();
-    expect(newVenusAge.age===24.193548387096776).toEqual(true);
+    expect(newVenusAge.venusAge).toEqual(24.193548387096776);
   });
 
   test('should correctly calculate age in Mars years', () => {
     const newMarsAge = new Age(15);
     newMarsAge.convertMars();
-    expect(newMarsAge.age===7.9787234042553195).toEqual(true);
+    expect(newMarsAge.marsAge).toEqual(7.9787234042553195);
   });
 
   test('should correctly calculate age in Jupiter years', () => {
     const newJupiterAge = new Age(15);
     newJupiterAge.convertJupiter();
-    expect(newJupiterAge.age===1.2647554806070826).toEqual(true);
+    expect(newJupiterAge.jupiterAge).toEqual(1.2647554806070826);
   });
 
   test('should correctly calculate remaining years on Earth, based on average expectancy of 78', () => {
