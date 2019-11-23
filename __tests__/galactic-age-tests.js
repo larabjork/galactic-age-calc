@@ -22,7 +22,7 @@ describe ('Age', () => {
   test('should correctly calculate age in Mercury years', () => {
     const newMercAge = new Age(15);
     newMercAge.convertMercury();
-    expect(newMercAge.age===62.5).toEqual(true);
+    expect(newMercAge.mercAge).toEqual(62.5);
   });
 
   test('should correctly calculate age in Venus years', () => {
