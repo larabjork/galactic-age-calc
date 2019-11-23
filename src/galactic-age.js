@@ -24,7 +24,7 @@ export class Age {
   }
 
   convertMercury() {
-    this.age = this.age/0.24;
+    this.mercAge = this.age/0.24;
   }
 
   convertVenus() {
