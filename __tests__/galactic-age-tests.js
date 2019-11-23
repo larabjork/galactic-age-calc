@@ -45,14 +45,14 @@ describe ('Age', () => {
 
   test('should correctly calculate remaining years on Earth, based on average expectancy of 78', () => {
     const newEarthRemain = new Age(15);
-    expect(newEarthRemain.earthRemain===63).toEqual(true);
+    expect(newEarthRemain.earthRemain).toEqual(63);
 
   });
 
   test('should correctly calculate remaining years, in Mercury years', () => {
     const testMercRem = new Age(15);
     testMercRem.mercuryRemain();
-    expect(testMercRem.age===262.5).toEqual(true);
+    expect(testMercRem.mercRemain).toEqual(262.5);
   });
 
   test('should correctly calculate remaining years, in Venus years', () => {
